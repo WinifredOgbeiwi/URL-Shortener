@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "heading": "Features  ",
+    "list": ["Link Shortening", "Branded Link", "Analytics"]
+  },
+  {
+    "id": "2",
+    "heading": " Resources ",
+    "list": ["Blog", "Developers", "Support"]
+  },
+  {
+    "id": "3",
+    "heading": " Company ",
+    "list": ["About", "Our Team", "Careers", "Contact"]
+  }
+]
