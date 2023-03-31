@@ -17,13 +17,7 @@ function UrlLink() {
         const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${inputValue}`)
         const data = await res.json()
         console.log(data.result)
-        setUrl([
-          ...url,
-          {
-            oldUrl: inputValue,
-            shortUrl: data.result.full_short_link,
-          },
-        ])
+        setUrl(data.result)
         setInputValue('')
       }
       apiCall()
