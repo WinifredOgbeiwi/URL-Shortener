@@ -47,6 +47,7 @@ function UrlLink() {
               onChange={(e) => setInputValue(e.target.value)}
               type="url"
               placeholder='Shorten a link here...'
+              required
               className='rounded-md bg-white w-full py-2 px-5 border-red-800' />
             {/* <p className='text-cust-red text-xs -mt-3 italic'>Please add a link</p> */}
 
