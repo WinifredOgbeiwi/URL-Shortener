@@ -7,22 +7,22 @@ function Footer() {
     <section className=" bg-cust-dark-violet flex flex-col sm:flex-row  justify-between items-center md:items-start py-16">
       <div className="text-2xl font-semibold text-white mb-12 md:mb-0">Shortly</div>
       <div className="flex flex-col sm:flex-row text-center gap-12 ">
-        {footerData.map(({ id, heading, list }) => {
-          return (
+        {footerData.map(({ id, heading, list }) =>(
+       
             <>
               <div key={id} className='text-white '>
                 <h5 className='text-sm font-semibold'>
                   {heading}</h5>
 
                 <div className='flex flex-col gap-2 mt-5 text-xs '>
-                  {list.map((listItem, i) => 
-                  <p key={i} className='hover:text-cust-cyan cursor-pointer'>{listItem} </p>)}
+                  {list.map((listItem,index) => 
+                  <p key={index} className='hover:text-cust-cyan cursor-pointer'>{listItem} </p>)}
                 </div>
               </div>
 
             </>
           )
-        })}
+        )}
       </div>
       
       <div className="flex  mt-10 md:mt-0 ml:0 md:ml-10  gap-5 text-white text-2xl ">
